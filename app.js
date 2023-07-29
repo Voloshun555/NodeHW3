@@ -2,12 +2,12 @@ const express = require("express");
 const logger = require("morgan");
 const cors = require("cors");
 
-const mongoose = require('mongoose')
+// const mongoose = require('mongoose')
 
-const DB_HOST = "mongodb+srv://Voloshun:z4CYyKzniR1O7dcn@cluster0.aknwarz.mongodb.net/Contacts_reader?retryWrites=true&w=majority"
-mongoose.connect(DB_HOST)
-.then(() =>console.log("Database connect success"))
-.catch(error => console.log(error.message))
+// const DB_HOST = "mongodb+srv://Voloshun:z4CYyKzniR1O7dcn@cluster0.aknwarz.mongodb.net/Contacts_reader?retryWrites=true&w=majority"
+// mongoose.connect(DB_HOST)
+// .then(() =>console.log("Database connect success"))
+// .catch(error => console.log(error.message))
 
 
 
