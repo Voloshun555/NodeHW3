@@ -1,9 +1,8 @@
 const app = require("./app");
-
+require("dotenv").config()
 const mongoose = require("mongoose");
+const {DB_HOST} = process.env;
 
-const DB_HOST =
-  "mongodb+srv://Voloshun:z4CYyKzniR1O7dcn@cluster0.aknwarz.mongodb.net/Contacts_reader?retryWrites=true&w=majority";
   mongoose.set('strictQuery', true)
 
 mongoose
