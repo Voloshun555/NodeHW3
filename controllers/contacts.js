@@ -1,4 +1,4 @@
-const Contact = require("../models/contact")
+const Contact = require("../models/contact");
 const { ctrl } = require("../helpers");
 
 const getAll = async (req, res) => {
@@ -29,7 +29,7 @@ const getAll = async (req, res) => {
 //     throw HttpError(404, "Not found");
 //   }
 //   res.json({
-//     message: "Delete success",
+//     message: "contact deleted",
 //   });
 // };
 

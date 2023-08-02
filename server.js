@@ -3,7 +3,7 @@ const app = require("./app");
 const mongoose = require("mongoose");
 const { DB_HOST, PORT = 3000 } = process.env;
 
-mongoose.set("strictQuery", true);
+mongoose.set('strictQuery', true);
 
 mongoose
   .connect(DB_HOST)
@@ -12,6 +12,6 @@ mongoose
     app.listen(PORT);
   })
   .catch((error) => {
-    console.log(error.message);
+    console.log(`Database connection failed. Error message: ${error.message}`);
     process.exit(1);
   });
